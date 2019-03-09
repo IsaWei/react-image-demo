@@ -1,0 +1,46 @@
+.preview-box {
+    width: 1000px;
+    height: 221px;
+    display: flex;
+    overflow-x: auto;
+    margin: auto;
+}
+
+.arrow {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+
+    top: 75px;
+}
+
+.arrow-left {
+    left: 200px;
+}
+
+.arrow-right {
+    right: 200px;
+}
+
+.img-default {
+    height: 200px;
+    max-width: 200px;
+    min-width: 200px;
+}
+
+.img-extend {
+    height: 400px;
+    width: 400px;
+}
+
+.img-active {
+    border: 2px solid red;
+}
+
+.select-part {
+    width: 90vw;
+    min-height: 500px;
+    overflow-y: auto;
+    border: 1px solid #232323;
+    margin: auto;
+}
