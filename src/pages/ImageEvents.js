@@ -72,21 +72,22 @@ class ImageEvents extends Component {
         const {selectedImgList} = this.state
         return (
             <div className="root">
+                <h1 style={{'paddingLeft': '25vw'}}>image事件demo：双击选中/左右箭头切换预览等。。。</h1>
                 <div>
                     <img src={require('../assets/svgs/arrow-left.svg')} className="arrow arrow-left"
-                         onClick={() => this.handleArrowClick(false)} alt="arrow-left" />
+                         onClick={() => this.handleArrowClick(false)} alt="arrow-left"/>
                     <div className="preview-box">
                         {imgList.map((item, index) => {
                             return (
                                 <img key={index} title={index} src={item.src} alt="head"
                                      className={`${this.state.activeImg === item.id ? 'img-active' : ''} ${'img-default'}`}
-                                     onDoubleClick={(e) => this.handleDbclick(e, item)} />
+                                     onDoubleClick={(e) => this.handleDbclick(e, item)}/>
                             )
                         })}
 
                     </div>
                     <img src={require('../assets/svgs/arrow-right.svg')} className="arrow arrow-right"
-                         onClick={() => this.handleArrowClick(true)} alt="arrow-rigth" />
+                         onClick={() => this.handleArrowClick(true)} alt="arrow-rigth"/>
                 </div>
                 <div className="select-box">
                     <p>选中的图片</p>
